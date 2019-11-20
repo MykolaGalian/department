@@ -1,0 +1,11 @@
+<table class="table table-hover">
+  <thead class="thead-light">
+    <tr>
+      <th>Відділ</th>
+
+    </tr>
+  </thead>
+  <tr *ngFor="let pd of serviceDep.depList">
+    <td (click)="populateForm(pd)">{{pd.DepartName}}</td>
+  </tr>
+</table>

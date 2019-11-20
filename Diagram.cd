@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Emp_Dep_Api_Angular.Controllers.DepartmentsController">
+    <Position X="4.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgEAAAAAQACACAAAAAAAAIAAAAAAAAAAEAAAAE=</HashCode>
+      <FileName>Controllers\DepartmentsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Controllers.EmployeesController">
+    <Position X="0.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAAAIAgAAAAAAgAAAAECAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Controllers\EmployeesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Controllers.PositionsController">
+    <Position X="2.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAggAAAAAAAJAAAAAEAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Controllers\PositionsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Controllers.StaffRestrictsController">
+    <Position X="6.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAEAIQACQAAAAAAAAAAQAAEAAAAgAAA=</HashCode>
+      <FileName>Controllers\StaffRestrictsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.Department">
+    <Position X="4.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAUCAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Models\Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.DepDBContext">
+    <Position X="9" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAgAAAAAAAQGAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Models\DepDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.Employee">
+    <Position X="0.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAgIAgAAAAAAAAEACAAAgCAAAQAAACAAA=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.Position">
+    <Position X="2.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQCACAAAAAAAAAIAAAEAA=</HashCode>
+      <FileName>Models\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.PositionDepartments">
+    <Position X="7" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAAAEACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PositionDepartments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Models.StaffRestrict">
+    <Position X="7" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAAgAAAAAAAAEACAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Models\StaffRestrict.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Repositories.DepartmentRepository" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAABAAAAAAABAAAAEAIAAAAAgAAAAEAgAA=</HashCode>
+      <FileName>Repositories\DepartmentRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Repositories.EmployeesRepository" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAJAAAAAAABAAAAAAoAAAAAgAEAAEAAAA=</HashCode>
+      <FileName>Repositories\EmployeesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Repositories.PositionRepository" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAABAAAAAAABAAgAAAIAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Repositories\PositionRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Emp_Dep_Api_Angular.Repositories.StaffRestrictRepository" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAIAAAAAAABAAAAAAQBAAAAAAIAAAAAgQAAAEAAAA=</HashCode>
+      <FileName>Repositories\StaffRestrictRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Emp_Dep_Api_Angular.Contracts.IDepartmentRepository">
+    <Position X="4.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAABAAAAEAIAAAAAgAAAAEAgAA=</HashCode>
+      <FileName>Contracts\IDepartmentRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Emp_Dep_Api_Angular.Contracts.IEmployeesRepository">
+    <Position X="0.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAIAAAAAAABAAAAAAoAAAAAgAEAAEAAAA=</HashCode>
+      <FileName>Contracts\IEmployeesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Emp_Dep_Api_Angular.Contracts.IPositionRepository">
+    <Position X="2.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAABAAgAAAIAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Contracts\IPositionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Emp_Dep_Api_Angular.Contracts.IStaffRestrictsRepository">
+    <Position X="6.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAIAAAAAAAAAAAAAAQBAAAAAAIAAAAAgQAAAEAAAA=</HashCode>
+      <FileName>Contracts\IStaffRestrictsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

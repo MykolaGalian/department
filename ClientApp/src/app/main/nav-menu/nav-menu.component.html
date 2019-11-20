@@ -1,0 +1,34 @@
+<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
+              
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]='["/"]'>На головну</a>
+        </div>
+        <div class='clearfix'></div>
+
+        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                  <a [routerLink]='["/main/department-list"]' (click)='collapse()'>
+                    <span class='glyphicon glyphicon-home'></span> Відділи
+                  </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/main/position-list"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-th-list'></span> Посади
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/main/employee-list"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-education'></span> Співробітники</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>

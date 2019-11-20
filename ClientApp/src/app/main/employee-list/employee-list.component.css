@@ -1,0 +1,5 @@
+hr {
+  border: none; /* Убираем границу */
+  background-color: dimgray; /* Цвет линии */  
+  height: 3px; /* Толщина линии */
+}

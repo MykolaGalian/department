@@ -1,0 +1,27 @@
+
+<p>Введіть логін і пароль</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <input name="Login" #Login="ngModel" [(ngModel)]="service.formDataEmp.Login" class="form-control"
+             placeholder="логін" required>   <!-- #Login="ngModel" - локальная ссылка не только на элемент но на сам контроллер ngModel, теперь в Login нам доступно не только значение модели, но и все дополнительные свойства и методы контроллера модели-->
+    </div>                                   <!-- значение из переменной сервиса (из конструктора текущего компонента) service.formDataEmp.Login-->
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">    
+     <input name="Password" #Password="ngModel" [(ngModel)]="service.formDataEmp.Password" class="form-control"
+           placeholder="пароль" required>
+   </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <button class="btn btn-sm btn-success btn-lg btn-block" type="submit"> OK</button>
+    </div>
+  </div>
+</form>
+
+
+

@@ -1,0 +1,46 @@
+
+<h4> {{serviceDep.formDataDep.DepartName}}</h4>
+<p>Нова посада в обраному відділі</p>
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <div>
+    <select name="PosId" #PosId="ngModel" [(ngModel)]="servicePos.PosId">
+      <option disabled>Виберіть посаду на підприємстві</option>
+      <option *ngFor="let pos of servicePos.posListDropDown" [value]="pos.PositionId">
+        {{pos.PositionName}}
+      </option>
+    </select>
+  </div>
+  
+  <div>
+    <button class="btn btn-sm btn-success btn-lg btn-block" type="submit"> Додати посаду в відділ</button>
+  </div>
+
+  <hr>
+  <p>Кількість співробітників {{servicePos.formDataPos.PositionName}}</p>
+  <p>по штатному розкладу:</p>
+  <div>
+    <select name="MaxAmount" #MaxAmount="ngModel" [(ngModel)]="serviceStuff.formDataStuffRest.MaxAmount">
+      <option disabled>Виберіть кількість співробітників</option>
+      <option *ngFor="let num of MaxNumberEmployee" [value]="num.value">
+        {{num.value}}
+      </option>
+    </select>
+  </div>  
+
+</form>
+
+<form #form2="ngForm" autocomplete="off" (submit)="onSubmit2(form2)">
+  <div>
+    <button class="btn btn-sm btn-success btn-lg btn-block" type="submit"> Змінити штатний розклад</button>
+  </div>
+</form>
+
+<hr>
+<p>Поточна кількість співробітників на обраній посаді в обраному відділі: {{serviceEmp.CurDepEmpNum}}</p>
+<p>Необхідна кількість співробітників на посаді за штатним розкладом: {{serviceStuff.MaxDepEmpNum}}</p>
+
+
+
+
+

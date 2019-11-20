@@ -1,0 +1,14 @@
+<table class="table table-hover">
+  <thead class="thead-light">
+    <tr>
+      <th>Посади в обраному відділі</th>
+
+    </tr>
+  </thead>
+  <tr *ngFor="let pd of servicePos.posList">
+    <td (click)="populateForm(pd)">{{pd.PositionName}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.PositionId)"></i>  <!-- Для удаления элемента -корзина- передача в метод onDelete Id-->
+    </td>
+  </tr>
+</table>

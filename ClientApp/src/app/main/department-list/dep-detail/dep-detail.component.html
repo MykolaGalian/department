@@ -1,0 +1,18 @@
+<p>Змінення/додавання відділу</p>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+
+  <input type="hidden" name="PositionId" [value]="serviceDep.formDataDep.DepartmentId">  <!--в компоненте присваиваем 0 для DepartmentId, т.к. иначе отправляется null для int для обновления - игнорируется-->
+
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <input name="DepartName" #DepartName="ngModel" [(ngModel)]="serviceDep.formDataDep.DepartName" class="form-control" placeholder="Назва відділу" required>
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <button class="btn btn-sm btn-success btn-lg btn-block" type="submit"> Змінити</button>
+    </div>
+  </div>
+</form>
